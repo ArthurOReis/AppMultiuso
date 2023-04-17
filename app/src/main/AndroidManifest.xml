@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProjetoPager"
         tools:targetApi="31">
         <activity
+            android:name="com.example.projetopager.Camera"
+            android:exported="false" />
+        <activity
             android:name=".Jogo"
             android:exported="false">
             <meta-data
