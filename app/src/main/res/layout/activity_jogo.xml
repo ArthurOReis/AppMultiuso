@@ -6,4 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".Jogo">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFE9F4"
+        tools:context=".Jogo">
+
+        <TextView
+            android:id="@+id/contadortentativas"
+            android:layout_width="298dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Default"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chute"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/campopistas"
+            android:layout_width="298dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Default"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numerosecreto"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <TextView
+            android:id="@+id/numerosecreto"
+            android:layout_width="298dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="&quot;???&quot;"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="90sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.050000012" />
+
+        <EditText
+            android:id="@+id/campotentativas"
+            android:layout_width="299dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#FFF"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:hint="Coloque seu chute!"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numerosecreto"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/chute"
+            android:layout_width="286dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#B6DCF0"
+            android:onClick="chute"
+            android:text="Chutar"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campopistas"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
